@@ -1,0 +1,15 @@
+.anim-items {
+  animation-name: animZoomIn;
+  animation-duration: 2s;
+}
+
+@keyframes animZoomIn {
+  from
+  {
+    transform: scale(0);
+  }
+  to
+  {
+    transform: scale(1);
+  }
+}

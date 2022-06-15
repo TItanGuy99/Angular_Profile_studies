@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="row justify-content">
+    <div class="col-sm text-left justify-content anim-items">
+      <div>
+        <h2>Contato</h2>
+        <p>Caso tenha alguma dúvida, entre em contato comigo.</p>
+
+        <form [formGroup]="formGroup">
+          <p><input placeholder="Insira seu nome" id="name" formControlName="name" /></p>
+          <p><input type="email" placeholder="Insira seu e-mail" id="email" formControlName="email" /></p>
+          <p>
+            <textarea placeholder="Insira a sua mensagem" id="message" formControlName="message" rows="4" cols="30"></textarea>
+          </p>
+          <p>
+            <button type="submit" value="Submeter" class="btn btn-primary" (click)="submitMessage()" >Submeter</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-modal #modal></app-modal>

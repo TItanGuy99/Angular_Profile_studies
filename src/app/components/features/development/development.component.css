@@ -1,0 +1,84 @@
+.image {
+  padding:5px;
+  max-width: 100%;
+}
+
+.imageCarousel {
+  max-width: 600px;
+}
+
+h3 {
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px #FF0000;
+}
+
+.carousel-text {
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px 4px #FF0000;
+}
+
+.masklayer  {
+  background: rgba(45, 88, 35, 0.7);
+}
+
+.anim-text {
+  animation-name: animFromRight;
+  animation-duration: 2s;
+}
+
+.anim-image {
+  animation-name: animFromLeft;
+  animation-duration: 2s;
+}
+
+.anim-items {
+  animation-name: animFadeIn;
+  animation-duration: 4s;
+}
+
+@keyframes animZoom {
+  from
+  {
+    transform: scale(0.0);
+  }
+  to
+  {
+
+    transform: scale(1.0);
+  }
+}
+
+@keyframes animFromRight {
+  from
+  {
+    left: -150%;
+  }
+  to
+  {
+    left: 0%;
+  }
+}
+
+@keyframes animFromLeft {
+  from
+  {
+    left: 150%;
+  }
+  to
+  {
+    left: 0%;
+  }
+}
+
+@keyframes animFadeIn {
+  from
+  {
+    opacity: 0.0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}

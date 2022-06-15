@@ -1,0 +1,150 @@
+<div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-sm text-left justify-content anim-text">
+      <div>
+        <h2>Entrevistas</h2>
+        <p class="mt-4">
+          Já realizei entrevistas com diversos programadores, designs,
+          dubladores, etc. Essas entrevistas foram tanto por vídeos quanto
+          escritas, aqui deixarei algumas que considero importantes.
+        </p>
+        <small
+          >Nem todas as entrevistas em inglês foram legendadas ainda.</small
+        >
+      </div>
+    </div>
+    <div class="col-sm anim-image">
+      <img
+        class="image"
+        src="assets/images/entrevistas.jpg"
+        alt="Eu entrevistando o dublador de Ryo Hazuki"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm anim-items">
+      <ul ngbNav #nav="ngbNav" class="nav-tabs">
+        <li [ngbNavItem]="1">
+          <a ngbNavLink>Mauricio Guerta</a>
+          <ng-template ngbNavContent>
+            <p align="center">
+              <iframe
+                class="video"
+                src="https://www.youtube.com/embed/2dmr_-q5ung"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+          <a ngbNavLink>Alexandre Pagano</a>
+          <ng-template ngbNavContent>
+            <p align="center">
+              <iframe
+                class="video"
+                src="https://www.youtube.com/embed/lTl1CkrwSQc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+          <a ngbNavLink>Daniel Trevisan</a>
+          <ng-template ngbNavContent>
+            <p align="center">
+              <iframe
+                class="video"
+                src="https://www.youtube.com/embed/gBBS3A_hYIE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="4">
+          <a ngbNavLink>Craig Stitt</a>
+          <ng-template ngbNavContent>
+            <p align="center">
+              <iframe
+                class="video"
+                src="https://www.youtube.com/embed/VjL7BUvjR2g"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="5">
+          <a ngbNavLink>Corey Marshall</a>
+          <ng-template ngbNavContent>
+            <p align="center">
+              <iframe
+                class="video"
+                src="https://www.youtube.com/embed/85JSJiAhcDc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    </div>
+  </div>
+  <div class="row mb-5 anim-items">
+    <div class="col">
+      <div>
+        <h2>Tutoriais</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://titangamestudioscom.wordpress.com/2017/04/22/tutorial-como-fazer-um-game-para-dreamcast-usando-a-titan-ide/"
+              >Como fazer um game para Dreamcast</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://titangamestudioscom.wordpress.com/2017/06/16/tutorial-conectando-o-dreamcast-online/"
+              >Conectando o Dreamcast online</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://titangamestudioscom.wordpress.com/2017/12/21/como-copiar-arquivos-do-vmu-para-o-pc/"
+              >Como copiar arquivos do VMU para o PC?</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://titangamestudioscom.wordpress.com/2018/02/04/usando-saves-do-dreamcast-no-emulador/"
+              >Usando saves do Dreamcast no emulador!</a
+            >
+          </li>
+          <li class="mb-5">
+            <a
+              target="_blank"
+              href="https://titangamestudioscom.wordpress.com/2017/12/09/jogando-phantasy-star-online-no-pc/"
+              >Jogando Phantasy Star Online no PC!</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

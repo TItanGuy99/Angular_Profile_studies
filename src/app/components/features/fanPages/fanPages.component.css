@@ -1,0 +1,78 @@
+.socialMediaLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.socialLogos {
+  max-width: 50px;
+}
+
+.socialLogos:hover {
+  scale: 1.2;
+}
+
+.image {
+  padding:5px;
+  max-width: 100%;
+}
+
+.anim-text {
+  animation-name: animFromRight;
+  animation-duration: 2s;
+}
+
+.anim-image {
+  animation-name: animFromLeft;
+  animation-duration: 2s;
+}
+
+.anim-items {
+  animation-name: animFadeIn;
+  animation-duration: 6s;
+}
+
+@keyframes animZoom {
+  from
+  {
+    transform: scale(0.0);
+  }
+  to
+  {
+
+    transform: scale(1.0);
+  }
+}
+
+@keyframes animFromRight {
+  from
+  {
+    left: -150%;
+  }
+  to
+  {
+    left: 0%;
+  }
+}
+
+@keyframes animFromLeft {
+  from
+  {
+    left: 150%;
+  }
+  to
+  {
+    left: 0%;
+  }
+}
+
+@keyframes animFadeIn {
+  from
+  {
+    opacity: 0.0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
