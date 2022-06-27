@@ -14,21 +14,21 @@ import { HttpService } from 'src/app/core/http.service';
   providers: [NgbModalConfig, NgbModal],
 })
 export class ContactComponent implements OnInit {
-  formGroup: FormGroup;
+  formGroup!: FormGroup;
   @ViewChild('modal') modal: any;
 
   constructor(
     public fb: FormBuilder,
     public httpService: HttpService
-  ) {
+  ) {}
+
+  ngOnInit() {
     this.formGroup = this.fb.group({
       name: ['', Validators.required],
-      email: ['', Validators.email],
-      message: ['', Validators.minLength(4)],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', [Validators.required, Validators.minLength(4)]],
     });
   }
-
-  ngOnInit() {}
 
   openModal(message: string): void {
     this.modal.openModal(message);
