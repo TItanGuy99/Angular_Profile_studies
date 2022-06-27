@@ -34,6 +34,18 @@ export class ContactComponent implements OnInit {
     this.modal.openModal(message);
   }
 
+  validateName(): boolean {
+    return !this.formGroup.controls.name.valid && this.formGroup.controls.name?.touched;
+  }
+
+  validateEmail(): boolean {
+    return !this.formGroup.controls.email.valid && this.formGroup.controls.email?.touched
+  }
+
+  validateMessage(): boolean {
+    return !this.formGroup.controls.message.valid && this.formGroup.controls.message?.touched
+  }
+
   submitMessage(): void {
     let body = {};
 
