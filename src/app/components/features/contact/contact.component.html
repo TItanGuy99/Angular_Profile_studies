@@ -6,8 +6,14 @@
         <p>Caso tenha alguma dúvida, entre em contato comigo.</p>
 
         <form [formGroup]="formGroup">
+          <label for="name">Nome:</label>
+          <em *ngIf="formGroup.controls.name?.invalid">(Campo obrigatório)</em>
           <p><input required placeholder="Insira seu nome" id="name" formControlName="name" /></p>
+          <label for="email">E-mail:</label>
+          <em *ngIf="formGroup.controls.email?.invalid">(Campo obrigatório)</em>
           <p><input required type="email" placeholder="Insira seu e-mail" id="email" formControlName="email" /></p>
+          <label for="message">Mensagem:</label>
+          <em *ngIf="formGroup.controls.message?.invalid">(Campo obrigatório)</em>
           <p>
             <textarea required placeholder="Insira a sua mensagem" id="message" formControlName="message" rows="4" cols="30"></textarea>
           </p>

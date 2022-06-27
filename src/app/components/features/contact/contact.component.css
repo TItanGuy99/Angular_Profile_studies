@@ -13,3 +13,9 @@
     transform: scale(1);
   }
 }
+
+em {
+  color:#E05C65;
+  padding-left:10px;
+  font-size: 12px;
+}
