@@ -6,13 +6,13 @@
         <p>Caso tenha alguma dúvida, entre em contato comigo.</p>
 
         <form [formGroup]="formGroup">
-          <p><input placeholder="Insira seu nome" id="name" formControlName="name" /></p>
-          <p><input type="email" placeholder="Insira seu e-mail" id="email" formControlName="email" /></p>
+          <p><input required placeholder="Insira seu nome" id="name" formControlName="name" /></p>
+          <p><input required type="email" placeholder="Insira seu e-mail" id="email" formControlName="email" /></p>
           <p>
-            <textarea placeholder="Insira a sua mensagem" id="message" formControlName="message" rows="4" cols="30"></textarea>
+            <textarea required placeholder="Insira a sua mensagem" id="message" formControlName="message" rows="4" cols="30"></textarea>
           </p>
           <p>
-            <button type="submit" value="Submeter" class="btn btn-primary" (click)="submitMessage()" >Submeter</button>
+            <button [disabled]="formGroup.invalid" type="submit" value="Submeter" class="btn btn-primary" (click)="submitMessage()" >Submeter</button>
           </p>
         </form>
       </div>
