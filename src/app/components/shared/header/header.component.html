@@ -13,26 +13,48 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item" [ngClass]="savePage === 1 ? 'active' : ''">
-        <a class="nav-link" (click)="setPage(1)" routerLink="/index">Home</a>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="setPage(1)"
+          routerLinkActive="active"
+          routerLink="/index"
+          >Home</a
+        >
       </li>
-      <li class="nav-item" [ngClass]="savePage === 2 ? 'active' : ''">
-        <a class="nav-link" (click)="setPage(2)" routerLink="/interviews"
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="setPage(2)"
+          routerLinkActive="active"
+          routerLink="/interviews"
           >Entrevistas e Tutoriais</a
         >
       </li>
-      <li class="nav-item" [ngClass]="savePage === 3 ? 'active' : ''">
-        <a class="nav-link" (click)="setPage(3)" routerLink="/fanpages"
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="setPage(3)"
+          routerLinkActive="active"
+          routerLink="/fanpages"
           >Fã Pages</a
         >
       </li>
-      <li class="nav-item" [ngClass]="savePage === 4 ? 'active' : ''">
-        <a class="nav-link" (click)="setPage(4)" routerLink="/development"
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="setPage(4)"
+          routerLinkActive="active"
+          routerLink="/development"
           >Desenvolvimento</a
         >
       </li>
-      <li class="nav-item" [ngClass]="savePage === 5 ? 'active' : ''">
-        <a class="nav-link" (click)="setPage(5)" routerLink="/contact"
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="setPage(5)"
+          routerLinkActive="active"
+          routerLink="/contact"
           >Contato</a
         >
       </li>
